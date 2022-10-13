@@ -3,7 +3,7 @@ $(document).ready(function () {
         $.cookie('visited_count', 1)
     }
     else {
-        $.cookie('visited_count', $.cookie('visited_count') + 1)
+        $.cookie('visited_count', Number($.cookie('visited_count')) + 1)
         $("#visited_count").text($.cookie('visited_count'));
     }
 });
