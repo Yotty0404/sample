@@ -1,0 +1,22 @@
+<head>
+    <title>HELLO</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <div>Ç±ÇÒÇ…ÇøÇÕ<span id="name"></span>Ç≥ÇÒÅB</div>
+</body>
+
+<style>
+    #name {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+</style>
+
+<script>
+    var params = (new URL(document.location)).searchParams;
+    var name = params.get('name');
+    $("#name").text(name);
+</script>
