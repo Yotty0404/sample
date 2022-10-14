@@ -8,10 +8,11 @@ $(document).ready(function () {
     }
 });
 
-function buttonClick(e) {
-    if ($("#name").val() == "") {
+function buttonClick() {
+    var name = $("#name").val();
+    if (name == "") {
         return;
     }
 
-    location.href = 'hello.html?name=' + encodeURIComponent($("#name").val());
+    location.href = 'hello.html?name=' + encodeURIComponent(name);
 }
