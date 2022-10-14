@@ -1,24 +1,28 @@
-<head>
-    <title>HELLO</title>
-    <meta charset="UTF-8">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/smoothness/jquery-ui.css">
-</head>
-<body>
-    <div>こんにちは<span id="name"></span>さん。</div>
-</body>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>HELLO</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <div>こんにちは<span id="name"></span>さん。</div>
+    </body>
 
-<style>
-    #name {
-        font-weight: bold;
-        background: linear-gradient(transparent 50%, #81F7BE 0%);
-        line-height: 1.3em;
-    }
-</style>
+    <style>
+        #name {
+            font-weight: bold;
+            background: linear-gradient(transparent 50%, #81F7BE 0%);
+            line-height: 1.3em;
+        }
+    </style>
 
-<script>
-    var params = (new URL(document.location)).searchParams;
-    var name = params.get('name');
-    $("#name").text(name);
-</script>
+    <script>
+        var params = (new URL(document.location)).searchParams;
+        var name = params.get('name');
+        $("#name").text(name);
+    </script>
+</html>
